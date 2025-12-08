@@ -1,5 +1,5 @@
 {% set name = "delayed-assert" %}
-{% set version = "0.3.6" %}
+{% set version = "0.4.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/delayed_assert-{{ version }}.tar.gz
-  sha256: 0e1c65afae4bae9c57b91c76e38287562924c9964a58c309249790c725c46239
+  sha256: 3ec7e3ab65ca674c241ebe66510104b318b3688a520d02a9da08a1abfd127d36
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 1
+  number: 0
 
 requirements:
   host:
